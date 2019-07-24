@@ -270,4 +270,50 @@ Images also use an `alt` attribute to determine what text to show if that image 
 <img src="images/dog.png" alt="cute puppy" height="500" width="500">
 ```
 
-### Forms
+### Form
+
+A `<form>` tag can be used to create a form in our HTML. This form can be used to collect user data.
+
+An HTML form contains `form elements`. Form elements are different types of input fields like text area, radio butotns, check boxes, etc.
+
+```html
+<form>
+  First name:<br>
+  <input type="text" name="firstname"><br>
+  Last name:<br>
+  <input type="text" name="lastname">
+  <input type="submit" value="Submit">
+</form>
+```
+
+`<input type="text">` - this defines a one line input field for user input
+
+`<input type="submit">` - this defines a form button that will submit the data typed into the form
+
+### Tables
+
+We can create tables to organize content in HTML by using a `<table>` tag.
+* Every table row is created using the `<tr>` tag.
+* A table header column is created using the `<th>` tag
+* a table cell is defined using the `<td>` tag
+
+```html
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+  </tr>
+  <tr>
+    <td>Tayte</td>
+    <td>Stokes</td> 
+  </tr>
+  <tr>
+    <td>Matt</td>
+    <td>Bodily</td> 
+  </tr>
+  <tr>
+    <td>Catie</td>
+    <td>Mondon</td> 
+  </tr>
+</table>
+```
