@@ -59,6 +59,27 @@ We will begin a comment with `<!--` and end the comment with `-->`.
 </body>
 ```
 
+### MetaTags
+
+Meta tags give overall information about your site that is used by search engines to search and display your website in their page rank algorithim.
+
+Meta tags need to be placed inside the `<head>` tag of your file.
+
+```html
+<head>
+    <meta charset="UTF-8">
+    <!-- charset determines the letter of the alphabet and characters used -->
+    <meta name="description" content="best website ever made">
+    <!-- the description will show up on a search engine as a primary description -->
+    <meta name="keywords" content="cool website me mine this is cool check it out">
+    <!-- keyowrds are used to help the search engine recognize what words could help find your site-->
+    <meta name="author" content="tayte stokes">
+    <!-- author shows who created the website -->
+    <meta name="viewport" ontent="width=device-width, initial-scale=1.0">
+    <!-- view port will tell the browser what device is using the website and adjust for mobile design -->
+</head>
+```
+
 ### Common Tags In HTML
 
 There are many different tags that we can use to creat HTML elements. Here, we will go over a few the most commonly used tags to create the structure of our application.
@@ -201,6 +222,30 @@ Input boxes are way we can capture user input. We can use an `<input>` tag to cr
 
 Input tags will need a `type` attribute applied in order to know what kind of input field we should use. If there is not one applied, it will default to `type="text"` which is just a normal input box a user can type in.
 
+Different types of inputs:
+
+* <input type="button"> 
+* <input type="checkbox">
+* <input type="color">
+* <input type="date">
+* <input type="datetime-local">
+* <input type="email">
+* <input type="file">
+* <input type="hidden">
+* <input type="image">
+* <input type="month">
+* <input type="number">
+* <input type="password">
+* <input type="radio">
+* <input type="range">
+* <input type="reset">
+* <input type="search">
+* <input type="submit">
+* <input type="tel">
+* <input type="text">
+* <input type="time">
+* <input type="url">
+
 ### Buttons
 
 Buttons are a great way to prompt a user to interact and perform an action on your web page.
@@ -224,3 +269,5 @@ Images also use an `alt` attribute to determine what text to show if that image 
 ```html
 <img src="images/dog.png" alt="cute puppy" height="500" width="500">
 ```
+
+### Forms
