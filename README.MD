@@ -508,6 +508,33 @@ The `display` property is a property can help aid us in setting up the lay out f
 
 `inline-block` - works just like inline, but allows us to edit the height and width of the element
 
+### Floats
+
+The `float` property places an element on the left or right side of it's container, allowing text and inline elements to wrap around it.
+
+```css
+div {
+    float: left;
+}
+
+img {
+    float: right;
+}
+```
+
+`clear` is the property we can use if we want to declare that nothing can sit on the side of the floated element
+
+```css
+div {
+    float: right;
+}
+
+h1 {
+    clear: right;
+    /* this will make the h1 sit underneath the div because we are clearing everything to the left side of the div positioned right */
+}
+```
+
 ### Text Properties
 
 There are multiple properties we can use to manipulate the way text looks on our web page.
