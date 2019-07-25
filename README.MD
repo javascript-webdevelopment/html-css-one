@@ -92,9 +92,9 @@ Meta tags need to be placed inside the `<head>` tag of your file.
 
 Semantic elements are elements that simply provide a meaning to the browser and developer rather than just representation. 
 
-Example of NON-Semantic: <div>, <span>
+Example of NON-Semantic: `<div>, <span>`
 
-Example of Semantic: <footer>, <header>, <nav>
+Example of Semantic: `<footer>, <header>, <nav>`
 
 Notice how the tags are providng a meaning to what content will be stored between them. Using semantic HTML will help communicate to the browser what your web page is and this will also be communicated to search engines making it easier to find your site.
 
@@ -159,11 +159,11 @@ For example: the `<div>` element has a `block` display by default.
 
 Other common elements that have a `block` display by default:
 
-* <ul>
-* <form>
-* <main>
-* <footer>
-* <nav>
+* `<ul>`
+* `<form>`
+* `<main>`
+* `<footer>`
+* `<nav>`
 
 #### Inline Level
 
@@ -173,10 +173,10 @@ For example: the `<span>` tag is a common `inline` display element.
 
 Other common elements that have an `inline` display by default:
 
-* <button>
-* <a>
-* <label>
-* <br>
+* `<button>`
+* `<a>`
+* `<label>`
+* `<br>`
 
 ### Tag Attributes
 
@@ -242,27 +242,27 @@ Input tags will need a `type` attribute applied in order to know what kind of in
 
 Different types of inputs:
 
-* <input type="button"> 
-* <input type="checkbox">
-* <input type="color">
-* <input type="date">
-* <input type="datetime-local">
-* <input type="email">
-* <input type="file">
-* <input type="hidden">
-* <input type="image">
-* <input type="month">
-* <input type="number">
-* <input type="password">
-* <input type="radio">
-* <input type="range">
-* <input type="reset">
-* <input type="search">
-* <input type="submit">
-* <input type="tel">
-* <input type="text">
-* <input type="time">
-* <input type="url">
+* `<input type="button">` 
+* `<input type="checkbox">`
+* `<input type="color">`
+* `<input type="date">`
+* `<input type="datetime-local">`
+* `<input type="email">`
+* `<input type="file">`
+* `<input type="hidden">`
+* `<input type="image">`
+* `<input type="month">`
+* `<input type="number">`
+* `<input type="password">`
+* `<input type="radio">`
+* `<input type="range">`
+* `<input type="reset">`
+* `<input type="search">`
+* `<input type="submit">`
+* `<input type="tel">`
+* `<input type="text">`
+* `<input type="time">`
+* `<input type="url">`
 
 ### Buttons
 
