@@ -6,7 +6,7 @@ HTML stands for Hyper Text Markup Language. It is one of the building block lang
 
 We create an HTML file by ending the name of the file with a `.html` extension. This will tell our browswer and code editors to read the file as HTML. It's important to note that `index.html` is a common name used with the root HTML file since the browser looks for files called `index` by default.
 
-## Syntax Overview
+### Syntax Overview
 
 HTML is based around using `tags` to establish an element.
 
@@ -20,6 +20,14 @@ Above we have the basic syntax structure for an HTML tag.
 2. The tag comes in a pair, an opening and closing tag. The closing tag begins with a `</>` to declare that it is ending the HTML tag.
 3. Between the angle brackets, is where we will decide what tag we are using.
 4. We wrap the tags around the content that we want stored inside that HTML element.
+
+Some tags can be self closing or `void`.
+
+```html
+    <input />
+```
+
+Notice how there is only one tag and it uses a forward slash at the ending of the tag.
 
 ### Basic HTML Structure
 
@@ -79,6 +87,16 @@ Meta tags need to be placed inside the `<head>` tag of your file.
     <!-- view port will tell the browser what device is using the website and adjust for mobile design -->
 </head>
 ```
+
+### Semantic Markup
+
+Semantic elements are elements that simply provide a meaning to the browser and developer rather than just representation. 
+
+Example of NON-Semantic: <div>, <span>
+
+Example of Semantic: <footer>, <header>, <nav>
+
+Notice how the tags are providng a meaning to what content will be stored between them. Using semantic HTML will help communicate to the browser what your web page is and this will also be communicated to search engines making it easier to find your site.
 
 ### Common Tags In HTML
 
