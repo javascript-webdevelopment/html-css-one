@@ -413,6 +413,33 @@ CSS:
 
 Notice how we prefix our selector with a `#` to declare we are selecting an id.
 
+### CSS Selector Patterns
+
+We can target multple elements at once, or be very specific about what element to select to apply a set of styles to.
+
+Using these different selector patterns will help keep our code `DRY`.
+
+We can use a `,` to select multiple elements at once to apply the same styling.
+
+```css
+h1, div, span {
+    color: blue,
+    background-color: tomato;
+}
+```
+
+We can use a white space ` ` or the carot `>` to go select a specific element that is nested inside of other elements.
+
+```css
+nav div h1 {
+    color: blue
+}
+
+nav > div > h1 {
+    color: red;
+}
+```
+
 ### CSS Specificty
 
 CSS specificity refers to a set of rules that browsers use to determine which styles are applied when there is a conflict. 
@@ -451,3 +478,94 @@ div {
 }
 ```
 
+### DRY CSS
+
+`DRY` stands for 'dont repeat yourself'. This is a practice to follow to help us avoid writing the same code multple times.
+
+Practices to help follow the DRY pattern:
+
+- Use classes to style many elements
+- Style as generally as you can, then make any adjustments for specific styling
+- Semantic HTML can help you name elements even more precise
+
+### Reset CSS
+
+By default, the browser will apply it's own set of styling rules to the elements inside of an HTML file.
+
+We can use a `reset css` file to remove all default styling from a browser.
+
+Check this website out to get a prebuilt reset css file: ![reset css](https://meyerweb.com/eric/tools/css/reset/)
+
+### Display Property
+
+The `display` property is a property can help aid us in setting up the lay out for each element.
+
+`display` has multiple values that we can give it:
+
+`block` - this display value will cause each element to appear own a new line and will take up the full amount of width that it can
+
+`inline` - this value will cause each element to not go to a new line and will only take up as much width as it needs. You can not edit the height or width of an inline element.
+
+`inline-block` - works just like inline, but allows us to edit the height and width of the element
+
+### Text Properties
+
+There are multiple properties we can use to manipulate the way text looks on our web page.
+
+Using good fonts and text colors are important for good design.
+
+There are many different properties we can modify:
+
+`font-size` - this will change the size of the font
+
+`color` - this will change the color of the text inside of an element
+
+`line-height` - will determine the total amount of space the content height will take up
+
+`text-align` - property that defines where to align the text according to the size of the element
+
+`font-family` - will determine what font family we want our text to be in
+
+`letter-spacing` - will determine how much white space should be bewtween each character
+
+### Background Properties
+
+These are properties that we can use to modify the background of an element.
+
+There are many different background properties we can modify:
+
+`background-image` - we can use an image as a background for an element. The content inside of the element will appear above the image.
+
+```css
+div {
+    background-image: url('image.png')
+}
+```
+
+`background-size` - this determines the size of the background
+
+`background-position` - we can use this to adjust where and how the background image will align
+
+`background-repeat` - we can use this to choose how and if the background image should be repeated
+
+`background-color` - we can use this to change the color of a background on an element
+
+### Box Model
+
+The box model is a tool we can use when it comes to styling the layout of our elements. The box model is more of a concept or pattern to follow rather than actual code values.
+
+Following the box model means that we are looking to style four specific parts of our elements in order to get the right layout and design of the element.
+
+Those four properties are:
+
+1. Margin
+Margin is the white space between each element
+
+2. Border
+Border is the border of the box
+
+3. Padding
+Padding is the white space between the content of an element and it's border
+
+4. Content
+The content of an element is anything inside of an element such as text, images, etc.
