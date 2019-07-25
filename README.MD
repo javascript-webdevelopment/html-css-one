@@ -317,3 +317,137 @@ We can create tables to organize content in HTML by using a `<table>` tag.
   </tr>
 </table>
 ```
+
+## CSS
+
+CSS stands for cascading style sheets. CSS is another one of the core languages of the web, but CSS is used mainly for creating style and layout of our HTML structure.
+
+CSS is not a programming language, it is a styling language. We can add CSS to our HTML files.
+
+### Methods To Do CSS
+
+There are three main ways that we can do CSS:
+
+1. Inline CSS
+
+This is where we use the `style=""` attribute on the opneing tag of a HTML element.
+We should always try to avoid adding css this way
+
+2. Internal CSS
+
+This is where we can write our CSS in the same HTML file, but we encapsulate it inside of a `<style>` tag.
+
+3. External CSS
+
+This is where we create a seperate style sheet to house our styling.
+
+To follow this pattern (which is the most common way to write css) we will need to make a style sheet that ends with the extension `.css`.
+Then we will need to link our style sheet to our HTML file. Inside of the `<head>` tag, we can use a `<link>` tag to link them together.
+
+```html
+<head>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+```
+
+Above there are three attributes associated with the `<link>` tag to link the style sheet:
+1. `rel` - this is the attribute where we tell the HTML file what the relation is
+2. `type' - this is where we declare the type of file
+3. `href` - this is where we declare the path to the style sheet we want to use
+
+### Selectors
+
+Selectors are used in CSS to determine what element we want to apply a specific styling to. Selectors are followed by a set of curly braces that is known as the `declaration`. Inside the declaration, we will use key/value pairs to select a property on the select element and apply value to that property.
+
+```css
+div {
+    background-color: tomato;
+}
+```
+
+There are a few ways to select an element to apply styling to:
+
+1. We select the tag, if we do this it will apply this style to all the tags that we have selected
+
+```css
+div {
+    background-color: tomato;
+}
+```
+
+2. We can select an html class.
+
+On the html tag, we can give it an attribute of `class=""` to give it a class name. We can use classes to apply styles to multiple elements using that class name.
+
+HTML:
+```html
+<div class="container">
+
+</div>
+```
+
+CSS:
+```css
+.container {
+    background-color: tomato;
+}
+```
+
+We need to prefix our selector with a `.` to declare we are looking for a class.
+
+3. We can select an html id
+
+This is the same as the selecting a class, but we should never have more thaan one element with the same id.
+
+HTML:
+```html
+<h1 id="title">This is my title</h1>
+```
+
+CSS:
+```css
+#title {
+    color: tomato;
+}
+```
+
+Notice how we prefix our selector with a `#` to declare we are selecting an id.
+
+### CSS Specificty
+
+CSS specificity refers to a set of rules that browsers use to determine which styles are applied when there is a conflict. 
+
+This set of rules work of a point system. Each select has a different point value given to it. The higher the point value, the more likely that style is to be applied to the element. We use this set of rules to determine how to can override or avoid overriding styles that conflict.
+
+Point System:
+
+`Inline Styling` - this is where we apply styles directly to the HTML tag. Inline styling is worth 1000 points.
+
+```html
+<h1 style="color: blue">This is my title</h1>
+```
+
+`ID` - when we use an id to apply styles, it will gain 100 points in this system
+
+```css
+#title {
+    color: blue
+}
+```
+
+`Class` - when a class is selected to apply an element, it gains 10 points
+
+```css
+.containers {
+    background-color: tomato;
+}
+```
+
+`element` - when we target an element directly using this tag, it is applied only 1 point
+
+```css
+div {
+    background-color: tomato;
+}
+```
+
